@@ -32,12 +32,14 @@ number = "".join(context.args)
 
 if number == "4242424242424242":
 await update.message.reply_text(
-"✅ Tarjeta de demostración reconocida.\n"
-"Esto no verifica tarjetas bancarias reales."
+"✅ Tarjeta de prueba reconocida.\n"
+"Modo demostración: activado.\n"
+"No se verifican tarjetas bancarias reales."
 )
 else:
 await update.message.reply_text(
-"❌ Solo se permite la tarjeta ficticia de demostración."
+"❌ Número no reconocido.\n"
+"Solo se permiten tarjetas de prueba."
 )
 
 async def about(update: Update, context: ContextTypes.DEFAULT_TYPE):
